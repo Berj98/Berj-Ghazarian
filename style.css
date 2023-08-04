@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Blaka&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tektur:wght@400;500;600;700;800;900&display=swap');
+
+::root{
+    --primary-color: #cc0606;
+    --secondary-color: #17b624;
+    --blue-color: #1616c5;
+    --yellow-color: #ffff46;
+    --dark-color: #0a0013;
+    --light-color: #e0e0e0;
+    --poppins: 'Poppins', sans-serif;
+}
+
+::placeholder{
+    color: #4e4e4e;
+    font-weight: 500;
+    font-size: 12.5px;
+    text-transform: capitalize;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+   scroll-behavior: smooth;
+   text-decoration: none;
+   list-style: none;
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Tektur', cursive;
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+    position: fixed;
+    width: 100%;
+    background-color: #e0e0e0;
+    height: 50px;
+    border-bottom: 2px solid #0a0013;
+    z-index: 1;
+}
+.menu-icon{
+    cursor: pointer;
+    color: #1616c5;
+    font-size: 20px;
+    display: none;
+}
+.logo{
+    width: 75px;
+    margin-top: 10px;
+}
+nav a{
+    margin-right: 35px;
+    color: #1616c5;
+    font-weight: 600;
+}
+nav a:hover{
+    color: #cc0606;
+}
+/* Header*/
+section{
+    padding: 100px 200px;
+}
+/* Home */
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(/image/Background.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.home h1{
+    font-size: 30px;
+}
+.home span{
+    font-family: 'Tektur', cursive;
+    color: #fafa00;
+    font-size: 70px;
+    margin: 20px 0;
+    display: inline-block;
+    font-weight: 900;
+}
+.home h3{
+    font-size: 25px;
+}
+.main-button{
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #ffff46;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #0a0013;
+    font-weight: 800;
+    border: 2px solid #0a0013;
+    font-family: 'Tektur', cursive;
+    transition: 0.7s ease;
+}
+.main-button:hover{
+    background-color: #fafa00;
+    transform: scale(1.1);
+}
+.social-icons{
+    position: relative;
+    right: 20px;
+}
+.social-icons a{
+    display: inline-block;
+    margin: 20px 0 10px 10px;
+    color: #ffff46;
+    background-color: #0a0013;
+    padding: 10px 15px;
+    font-size: 17px;
+    border-radius: 50%;
+    transition: 0.7s ease;
+}
+.social-icons a:hover{
+    background-color: #fafa00;
+    color: #0a0013;
+    transform: scale(1.2);
+}
+/* Home */
+.title{
+    display: flex;
+    justify-content: center;
+    color: #1616c5;
+    font-size: 30px;
+    font-weight: 900;
+}
+.title i{
+    margin-right: 10px;
+}
+/* Services */
+.service{
+    background-color: #f7f8fc;
+}
+.card-content{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    box-shadow: 20px 15px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    margin: 15px;
+    padding: 2rem;
+    border-radius: 20px;
+    transition: 0.7s ease;
+    border: 2px solid #0a0013;
+}
+.card:nth-child(4){
+    margin-top: 60px;
+}
+.card:nth-child(5){
+    margin-top: 60px;
+}
+.card:nth-child(6){
+    margin-top: 60px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon i{
+    font-size: 4em;
+    margin-bottom: 25px;
+    color: #cc0606;
+}
+.info{
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.info h3{
+    color: #17b624;
+}
+.info p{
+    margin-top: 10px;
+    font-weight: 600;
+}
+/* Services */
+/* Skills */
+.skills{
+    background-color: #0a0013;
+}
+.title span{
+    color: #17b624;
+    margin-left: 10px;
+}
+.icon img{
+    width: 200px;
+}
+.info h2{
+    color: #fafa00;
+    margin-top: 20px;
+}
+/* Skills */
+/* About */
+.about{
+    background-color: #e0e0e0;
+}
+.about-me{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+.about img{
+    width: 350px;
+    border-radius: 50%;
+    border: 2px solid #0a0013;
+}
+.about-text p{
+    width: 85%;
+    font-weight: 500;
+    color: #cc0606;
+    letter-spacing: 1px;
+    text-transform: capitalize; 
+}
+/* About */
+/* Contact */
+.contact {
+    background-color: #1c1b22;
+}
+.contact h2{
+    color: #fafa00;
+}
+.contact h2 span{
+    color: #fff;
+}
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    text-align: center;
+    border: 2px solid #ffff46;
+    border-radius: 20px;
+    padding: 3rem;
+}
+.contact-form form h1{
+    font-family: var(--poppins);
+    color: #1616c5;
+    font-size: 40px;
+    font-weight: 900;
+}
+.contact-form form{
+    width: 600px;
+}
+.contact-form form input, textarea ,button{
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    outline: none;
+    padding: 7px 10px;
+    background-color: #f7f8fc;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+}
+textarea, .text{
+    text-transform: capitalize;
+    resize: none;
+}
+.email{
+    text-transform: lowercase;
+}
+.contact-form form button{
+    background-color: #1616c5;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 0;
+    transition:.5s ease all;
+}
+.contact-form form button:hover{
+    background-color: #fafa00;
+    color: #0a0013;
+}
+/* Contact */
+/* Footer */
+footer{
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    overflow: hidden;
+}
+footer p{
+    margin-left: 20px;
+    font-weight: 500;
+}
+footer .social-icons a{
+    background: none;
+    color: #1616c5;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+footer .social-icons a:hover{
+    background: none;
+    transform: scale(1.6);
+}
+/* Footer */
