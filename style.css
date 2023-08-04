@@ -39,10 +39,17 @@ header{
     padding: 30px 150px;
     position: fixed;
     width: 100%;
-    background-color: #e0e0e0;
-    height: 50px;
+    background-color: #ffe5e5;
     border-bottom: 2px solid #0a0013;
+    height: 50px;
     z-index: 1;
+    transition: all 0.3s ease;
+}
+.header.sticky{
+    background-color: #d8c0c0;
+}
+.active{
+    color: #0a0013;
 }
 .menu-icon{
     cursor: pointer;
@@ -89,7 +96,7 @@ section{
 .home h3{
     font-size: 25px;
 }
-.main-button{
+.main-button, .cv{
     display: inline-block;
     margin-top: 30px;
     background-color: #ffff46;
@@ -101,9 +108,12 @@ section{
     font-family: 'Tektur', cursive;
     transition: 0.7s ease;
 }
-.main-button:hover{
+.main-button:hover .cv{
     background-color: #fafa00;
     transform: scale(1.1);
+}
+.cv{
+    margin-left: 10px;
 }
 .social-icons{
     position: relative;
@@ -309,3 +319,42 @@ footer .social-icons a:hover{
     transform: scale(1.6);
 }
 /* Footer */
+
+/* Media Queries */
+@media (max-width: 991px){
+    .header{
+        padding: 2rem 4%;
+    }
+    section{
+        padding: 10rem 4% 2rem 3rem;
+    }
+    .home{
+        padding: 2rem 3rem;
+    }
+    footer{
+        padding: 2rem 4%;
+    }
+}
+
+@media (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+    header{
+        background-color: #e0e0e0;
+    }
+    nav{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 4%;
+        background-color: #e0e0e0;
+    }
+    nav a{
+        display: block;
+        font-size: 1.2rem;
+        margin: 2rem 0;
+        text-align: center;
+    }
+}
