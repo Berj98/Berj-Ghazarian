@@ -3,7 +3,7 @@ let menuIcon = document.querySelector('.menu-icon');
 let navbar = document.querySelector('navbar');
 
 menuIcon.addEventListener('click', function(){
-    menuIcon.classList.toggle('bx-x');
+    menuIcon.classList.toggle('close');
 })
 
 
