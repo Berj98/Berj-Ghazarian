@@ -466,7 +466,7 @@ footer p a i{
         right: 70px;
     }
     .cv{
-        transform: translateX(-100px);
+        transform: translateX(-30px);
         font-size: 14px;
     }
     .about-me{
@@ -499,7 +499,7 @@ footer p a i{
 @media (max-width: 375px){
     #menu-icon{
         position: relative;
-        right: 10px;
+        right: 30px;
     }
 }
 
