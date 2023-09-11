@@ -75,7 +75,7 @@ section{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background-image: url(/image/Background.jpg);
+    background-image: url(./image/Background.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
