@@ -414,6 +414,9 @@ footer p a i{
 }
 
 @media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
     .heading{
         font-size: 25px;
     }
@@ -497,6 +500,9 @@ footer p a i{
     }
 }
 @media (max-width: 375px){
+    body{
+        overflow-x: hidden;
+    }
     #menu-icon{
         position: relative;
         right: 30px;
