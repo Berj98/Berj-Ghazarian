@@ -53,9 +53,10 @@ h1, h2, h3, h4, h5, h6{
     color: #1616c5;
     font-size: 25px;
     display: none;
-    background-color: var(--blue-color);
-    padding: 8px;
-    box-shadow: 10px 0px 18px 0px rgba(235,235,235,0.75);
+    background-color: var(--light-color);
+    padding: 4px;
+    box-shadow: 0px 0 30px 0 var(--blue-color);
+    border-radius: 5px;
 }
 .logo{
     width: 75px;
