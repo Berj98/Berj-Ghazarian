@@ -146,6 +146,7 @@ section{
 .heading{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: #1616c5;
     font-size: 35px;
     font-weight: 900;
