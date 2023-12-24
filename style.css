@@ -49,13 +49,13 @@ h1, h2, h3, h4, h5, h6{
     background-color: #d8c0c0;
 }
 .header #menu-icon{
-    cursor: pointer;
-    color: #1616c5;
+    color: var(--blue-color);
     font-size: 25px;
+    cursor: pointer;
     display: none;
     background-color: var(--light-color);
     padding: 4px;
-    box-shadow: 0px 0 30px 0 var(--blue-color);
+    box-shadow: 0px 0 30px 0 var(--blue-color);k
     border-radius: 5px;
 }
 .logo{
@@ -64,11 +64,11 @@ h1, h2, h3, h4, h5, h6{
 }
 .navbar a{
     margin-right: 35px;
-    color: #1616c5;
+    color: var(--blue-color);
     font-weight: 600;
 }
 .navbar .active{
-    color: #0a0013;
+    color: var(--dark-color);
 }
 /* Header*/
 section{
@@ -79,7 +79,7 @@ section{
     display: flex;
     align-items: center;
     min-height: 100vh;
-    background: url(./image/Background.jpg);
+    background-image: url(/image/Background.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -117,7 +117,8 @@ section{
 }
 .cv{
     transition: 0.7s ease;
-    margin-left: 10px;
+    margin-left: 22px;
+    padding: 10px 22px;
 }
 .cv:hover{
     transform: scale(1.1);
@@ -146,7 +147,6 @@ section{
 .heading{
     display: flex;
     justify-content: center;
-    align-items: center;
     color: #1616c5;
     font-size: 35px;
     font-weight: 900;
@@ -380,13 +380,13 @@ footer p{
     margin-left: 20px;
     font-weight: 500;
 }
-footer p a i{
+footer p i{
     margin-left: 10px;
     border: 2px solid #0a0013;
-    padding: 5px;
     border-radius: 50%;
-    color: #f7f8fc;
     background-color: #0a0013;
+    color: #f7f8fc;
+    padding: 5px;
 }
 /* Footer */
 
@@ -396,16 +396,16 @@ footer p a i{
         padding: 2rem 4%;
     }
     section{
-        padding: 10rem 4% 2rem 3rem;
+        overflow-x: hidden;
+        padding: 2rem 4% 2rem 3rem;
     }
     .home{
         padding: 2rem 3rem;
     }
     .home h1 span{
-        font-size: 28px;
+        font-size: 25px;
     }
     .home .cv{
-        transform: translateX(5px);
     }
     .skills-content .progress h3{
         font-size: 17px;
@@ -419,9 +419,6 @@ footer p a i{
 }
 
 @media (max-width: 768px){
-    body{
-        overflow-x: hidden;
-    }
     .heading{
         font-size: 25px;
     }
@@ -474,7 +471,7 @@ footer p a i{
         right: 70px;
     }
     .cv{
-        transform: translateX(-30px);
+        transform: translateX(-20px);
         font-size: 14px;
     }
     .about-me{
@@ -489,7 +486,7 @@ footer p a i{
     }
     footer{
         padding: 0.2rem;
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 @media (max-width: 520px){
@@ -505,12 +502,9 @@ footer p a i{
     }
 }
 @media (max-width: 375px){
-    body{
-        overflow-x: hidden;
-    }
     #menu-icon{
         position: relative;
-        right: 30px;
+        right: 20px;
     }
 }
 
